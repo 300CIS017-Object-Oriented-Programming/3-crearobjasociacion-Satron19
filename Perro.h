@@ -18,7 +18,7 @@ private:
     Propietario* pPropietario;
 
 public:
-    Perro();
+    Perro(string nombre, int edad, string raza, string color, string tamano);
     ~Perro(); //Destructor
     void ladrar();
     Propietario * getPropietario();
