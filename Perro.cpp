@@ -12,7 +12,11 @@ Perro::Perro() {
     this->tamanio = "";
     this->color = "";
 }
-
+Perro::Perro(string n, int e, string r, string c, string t){
+    this->edad = e;
+    this->raza = r;
+    this->tamanio = t;
+    this->color = c; 
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
 }
