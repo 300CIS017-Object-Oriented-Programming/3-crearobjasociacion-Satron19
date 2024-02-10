@@ -13,6 +13,7 @@ Perro::Perro() {
     this->color = "";
 }
 Perro::Perro(string n, int e, string r, string c, string t){
+    this->nombre = n;
     this->edad = e;
     this->raza = r;
     this->tamanio = t;
