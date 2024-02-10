@@ -19,3 +19,7 @@ std::string Propietario::getNombre()  {
 void Propietario::setNombre(std::string nombre) {
     this->nombre = nombre;
 }
+
+void Propietario::mostrarInfo() {
+    cout << "Nombre: " << nombre << ", Documento: " << documento << ", Edad: " << to_string(edad) << endl;
+}
