@@ -32,7 +32,7 @@ int main() {
     cout << juan->mostrarInfo() << endl;
     cout << "Documento del propietario: " << pepper->getPropietario()->getDocumento() << endl;
     cout << "Edad del propietario: " << pepper->getPropietario()->getEdad() << endl;
-    cout << "Veterinario de miPerro: " << miPerro->getVeterinario()->getName() << endl;
+    cout << "Veterinario de pepper: " << pepper->getVeterinario()->getName() << endl;
     Raza* race = new Raza("schnauzer","Germany");
     pepper->setRaza(race);
     cout << "the race of "<<pepper->getNombre()<< " is "<< pepper->getRaza()->getName()<<"and his country of origin is "<< pepper->getRaza()->getOrigin()<<endl;
