@@ -30,6 +30,8 @@ int main() {
 
     cout << juan->mostrarInfo() << endl;
     cout << "Documento del propietario: " << pepper->getPropietario()->getDocumento() << endl;
+    cout << "Edad del propietario: " << pepper->getPropietario()->getEdad() << endl;
+
 
     
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
