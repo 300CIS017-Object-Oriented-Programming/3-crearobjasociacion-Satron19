@@ -29,6 +29,8 @@ int main() {
     // Consultar el nombre del pPropietario del perro Firulais
 
     cout << juan->mostrarInfo() << endl;
+    cout << "Documento del propietario: " << pepper->getPropietario()->getDocumento() << endl;
+
     
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
 
