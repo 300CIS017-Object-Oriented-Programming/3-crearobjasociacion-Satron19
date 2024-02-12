@@ -7,7 +7,7 @@ Profesor: Gonzalo Noreña
 
 #ifndef VETERINARIO_H
 #define VETERINARIO_H
-
+#include <iostream>
 #include <string>
 
 using namespace std;
