@@ -27,14 +27,23 @@ void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
     // Es memoria dinámica, en el destructor se debe liberar
     this->pPropietario = new Propietario(nombre, docIdentidad);
 }
+void Perro::asociarVeterinario(std::string nombre, std::int aniosExperiencia) {
+    this->pVeterinario = new Veterinario(nombre, aniosExperiencia);
+}
+
 
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
+void Perro::setVeterinario(Veterinario *pVeterinario) {
+    this->pVeterinario = pVeterinario;
+}
 Propietario *Perro::getPropietario() {
     return this->pPropietario;
 }
-
+Propietario *Perro::getVeterinario(){
+    return this->pVeterinario;
+}
 int Perro::getEdad() {
     return edad;
 }
