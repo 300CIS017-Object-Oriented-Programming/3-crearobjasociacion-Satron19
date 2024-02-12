@@ -34,6 +34,8 @@ int main() {
     cout << "Edad del propietario: " << pepper->getPropietario()->getEdad() << endl;
     cout << "Veterinario de pepper: " << pepper->getVeterinario()->getName() << endl;
     Raza* race = new Raza("schnauzer","Germany");
+    Raza* race2 = new Raza("Mastin Napolitano","Italia");
+    firulais->setRaza(race2);
     pepper->setRaza(race);
     cout << "the race of "<<pepper->getNombre()<< " is "<< pepper->getRaza()->getName()<<"and his country of origin is "<< pepper->getRaza()->getOrigin()<<endl;
     
