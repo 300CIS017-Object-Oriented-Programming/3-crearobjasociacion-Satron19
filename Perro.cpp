@@ -84,10 +84,17 @@ void Perro::setColor(std::string color) {
     this->color = color;
 }
 
-Perro::~Perro() {
-    delete pPropietario;
+void Perro::agregarRaza(string name, string origin) {
+    this->pRaza = new Raza (name,origin);
 }
 
+void Perro::setRaza(Raza* pRaza){
+    this->pRaza = pRaza;
+}
+
+Raza* Perro::getRaza() {
+    return pRaza;
+}
 
 
 
