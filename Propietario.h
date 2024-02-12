@@ -19,6 +19,9 @@ public:
     std::string getNombre();
     void setNombre(std::string nombre);
     int getEdad();
+    void setEdad(std::int edad);
+    string getDoc();
+    void setDoc(std::string docIdentidad);
 
 
 
