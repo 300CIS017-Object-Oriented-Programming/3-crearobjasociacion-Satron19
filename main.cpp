@@ -24,7 +24,7 @@ int main() {
     juan->setEdad(30);
 
     pepper.agregarPropietario(juan);
-    pepper->asociarVeterinario(new Veterinario("Dr. Smith", 5));
+    pepper->asociarVeterinario("Dr. Smith", 5);
     
 
     // Consultar el nombre del pPropietario del perro Firulais
@@ -33,7 +33,9 @@ int main() {
     cout << "Documento del propietario: " << pepper->getPropietario()->getDocumento() << endl;
     cout << "Edad del propietario: " << pepper->getPropietario()->getEdad() << endl;
     cout << "Veterinario de miPerro: " << miPerro->getVeterinario()->getName() << endl;
-
+    Raza* race = new Raza("schnauzer","Germany");
+    pepper->setRaza(race);
+    cout << "the race of "<<pepper->getNombre()<< " is "<< pepper->getRaza()->getNombre()<<"and his country of origin is "<< pepper->getRaza()->getOrigin()<<endl;
     
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
 
