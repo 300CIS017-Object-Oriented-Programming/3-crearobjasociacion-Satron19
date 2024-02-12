@@ -7,6 +7,8 @@
 #include <string>
 #include <iostream>
 #include "Propietario.h"
+#include "Veterinario.h"
+#include "Raza.h"
 
 class Perro {
 private:
