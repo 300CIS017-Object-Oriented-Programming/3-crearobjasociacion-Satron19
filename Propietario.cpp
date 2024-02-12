@@ -23,3 +23,7 @@ void Propietario::setNombre(std::string nombre) {
 string Propietario::mostrarInfo() {
     return "Nombre: " + nombre + ", Documento: " + to_string(documento) + ", Edad: " + to_string(edad);
 }
+
+int Propietario::getEdad() const {
+    return edad;
+}
