@@ -95,6 +95,9 @@ void Perro::setRaza(Raza* pRaza){
 Raza* Perro::getRaza() {
     return pRaza;
 }
-
+Perro::~Perro() {
+    delete pPropietario;
+    delete pVeterinario;
+}
 
 
