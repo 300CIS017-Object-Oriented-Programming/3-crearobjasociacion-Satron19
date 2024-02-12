@@ -18,6 +18,7 @@ public:
     void mostrarInfo();
     std::string getNombre();
     void setNombre(std::string nombre);
+    int getEdad();
 
 
 
