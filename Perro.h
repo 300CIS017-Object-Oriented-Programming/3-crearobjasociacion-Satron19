@@ -17,6 +17,7 @@ private:
     std::string color;
     Propietario* pPropietario;
     Veterinario* pVeterinario;
+    Raza* pRaza;
 
 public:
     Perro();
@@ -45,5 +46,7 @@ public:
     void setTamanio(std::string tamanio);
     std::string getColor();
     void setColor(std::string color);
+    Raza* getRaza();
+    void setRaza(Raza *pRaza);
 };
 #endif
