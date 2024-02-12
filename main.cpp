@@ -35,7 +35,7 @@ int main() {
     cout << "Veterinario de miPerro: " << miPerro->getVeterinario()->getName() << endl;
     Raza* race = new Raza("schnauzer","Germany");
     pepper->setRaza(race);
-    cout << "the race of "<<pepper->getNombre()<< " is "<< pepper->getRaza()->getNombre()<<"and his country of origin is "<< pepper->getRaza()->getOrigin()<<endl;
+    cout << "the race of "<<pepper->getNombre()<< " is "<< pepper->getRaza()->getName()<<"and his country of origin is "<< pepper->getRaza()->getOrigin()<<endl;
     
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
 
