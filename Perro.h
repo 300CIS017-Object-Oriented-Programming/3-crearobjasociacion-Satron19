@@ -26,7 +26,8 @@ public:
     Propietario * getPropietario();
 
     // Sirve para.......
-    void agregarPropietario(std::string nombre, std::string docIdentidad);
+    void agregarPropietario(std::string nombre, std::string docIdentidad);  // The agregarPropietario method sets the pPropietario attribute of the Perro class
+                                                                            // to establish a relationship between the Perro and Propietario classes.
 
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
     void setPropietario(Propietario * pPropietario);
