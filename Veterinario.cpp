@@ -4,24 +4,26 @@ Nombre: Samuel David Troncoso
 Profesor: Gonzalo Noreña 
 */
 
-
-#ifndef VETERINARIO_H
-#define VETERINARIO_H
-
-#include <string>
-
+#include "Veterinario.h"
 using namespace std;
 
-class Veterinario{
+Veterinario::Veterinario(string nombre, int aniosExperiencia){
+    this->nombre = nombre;
+    this->aniosExperiencia = aniosExperiencia;
+}
 
-    string nombre;
-    int aniosExperiencia;
+string Veterinario::getNombre() {
+    return nombre;
+}
 
+void Veterinario::setName(string nombre) {
+    this->nombre = nombre;
+}
 
-    public:
-      Veterinario();
-      Veterinario(string nombre, int aniosExperiencia);
-      void setName(string nombre);
-      void setAniosExperiencia(int anos);
-      string getName();
-      int getAniosExperiancia();
+int Veterinario::getAniosExperiencia()  {
+    return aniosExperiencia;
+}
+
+void Veterinario::setAniosExperiencia(int aniosExperiencia) {
+    this->aniosExperiencia = aniosExperiencia;
+}
