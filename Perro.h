@@ -16,6 +16,7 @@ private:
     std::string tamanio;
     std::string color;
     Propietario* pPropietario;
+    Veterinario* pVeterinario;
 
 public:
     Perro();
@@ -24,7 +25,7 @@ public:
     ~Perro(); //Destructor
     void ladrar();
     Propietario * getPropietario();
-    Veterinario* pVeterinario;
+    Veterinario*  getVeterinario();
 
     // Sirve para.......
     void agregarPropietario(std::string nombre, std::string docIdentidad);  // The agregarPropietario method sets the pPropietario attribute of the Perro class
